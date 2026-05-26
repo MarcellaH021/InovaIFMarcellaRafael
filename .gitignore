@@ -1,0 +1,19 @@
+# node_modules
+node_modules/
+
+# arquivos de log
+*.log
+
+# arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# variáveis de ambiente
+.env
+
+# pasta de build
+dist/
+build/
+
+# arquivos do VS Code
+.vscode/
