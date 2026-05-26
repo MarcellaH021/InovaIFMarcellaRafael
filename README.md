@@ -11,10 +11,8 @@ Trabalho em equipe
 HTML
 CSS
 JavaScript
-📥 Clonar o projeto
-git clone https://github.com/seu-usuario/projeto.git
-📌 Objetivo
 
+📌 Objetivo
 Praticar:
 
 Commits
