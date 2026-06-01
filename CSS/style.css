@@ -1,4 +1,12 @@
+html {
+    height: 100%;
+}
+
 body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
     font-family: 'Inter', sans-serif;
     background-color: #05070a;
     color: #ffffff;
@@ -6,7 +14,9 @@ body {
 }
 
 .cabecalho-flutuante {
+    width: calc(100% - 40px);
     max-width: 1280px;
+
     margin: 20px auto 0 auto;
     padding: 12px 24px;
 
@@ -63,4 +73,60 @@ body {
 
     text-transform: uppercase;
     letter-spacing: -0.03em;
+}
+
+.conteudo {
+    flex: 1;
+}
+
+
+.rodape {
+    margin-top: auto;
+    background-color: #111827;
+    color: white;
+    padding: 20px;
+}
+
+.rodape-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.rodape-coluna {
+    flex: 1;
+    min-width: 220px;
+}
+
+.rodape-coluna h2,
+.rodape-coluna h3 {
+    margin-bottom: 8px;
+}
+
+.rodape-coluna ul {
+    list-style: none;
+    padding: 0;
+}
+
+.rodape-coluna li {
+    margin-bottom: 4px;
+}
+
+.rodape-coluna a {
+    color: white;
+    text-decoration: none;
+}
+
+.rodape-coluna a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #374151;
 }
