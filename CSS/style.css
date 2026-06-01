@@ -1,6 +1,17 @@
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #05070a;
+    background-color: #424954;
     color: #ffffff;
     overflow-x: hidden;
+}
+
+#video{
+    width: 70%;
+    cursor: pointer;
+}
+
+#videoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;     
 }
