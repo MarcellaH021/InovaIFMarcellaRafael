@@ -1,4 +1,12 @@
+html {
+    height: 100%;
+}
+
 body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
     font-family: 'Inter', sans-serif;
     background-color: #424954;
     color: #ffffff;
@@ -14,4 +22,123 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;     
+
+}
+
+.cabecalho-flutuante {
+    width: calc(100% - 40px);
+    max-width: 1280px;
+
+    margin: 20px auto 0 auto;
+    padding: 12px 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgba(13, 17, 23, 0.7);
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo-itens {
+    display: flex;
+    align-items: center;
+}
+
+.icone-logo {
+    width: 24px;
+    height: 24px;
+    color: white;
+    margin-right: 8px;
+}
+
+.texto-superior {
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 1;
+
+    text-transform: uppercase;
+    letter-spacing: -0.05em;
+
+    color: #9ca3af;
+}
+
+.texto-inferior {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1;
+
+    text-transform: uppercase;
+    letter-spacing: -0.03em;
+}
+
+.conteudo {
+    flex: 1;
+}
+
+
+.rodape {
+    margin-top: auto;
+    background-color: #111827;
+    color: white;
+    padding: 20px;
+}
+
+.rodape-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.rodape-coluna {
+    flex: 1;
+    min-width: 220px;
+}
+
+.rodape-coluna h2,
+.rodape-coluna h3 {
+    margin-bottom: 8px;
+}
+
+.rodape-coluna ul {
+    list-style: none;
+    padding: 0;
+}
+
+.rodape-coluna li {
+    margin-bottom: 4px;
+}
+
+.rodape-coluna a {
+    color: white;
+    text-decoration: none;
+}
+
+.rodape-coluna a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #374151;
 }
