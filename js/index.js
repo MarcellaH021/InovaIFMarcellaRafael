@@ -17,3 +17,15 @@ buttons.forEach(button => {
     text.classList.toggle('show'); // ativa/desativa a animação
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const whatsapp = document.querySelector(".whatsapp-float");
+
+    setInterval(() => {
+        whatsapp.classList.add("shake");
+
+        setTimeout(() => {
+            whatsapp.classList.remove("shake");
+        }, 800);
+    }, 10000);
+});
