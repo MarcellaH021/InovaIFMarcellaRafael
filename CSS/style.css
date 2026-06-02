@@ -399,3 +399,59 @@ body {
 .utilidade-card p {
     color: #9ca3af;
 }
+
+.feedbacks {
+    min-height: 100vh;
+    padding: 80px 20px;
+    background-color: #05070a;
+}
+
+.feedbacks-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feedbacks h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.feedbacks-descricao {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 60px;
+    color: #9ca3af;
+}
+
+.feedbacks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.feedback-card {
+    padding: 30px;
+
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+
+    backdrop-filter: blur(10px);
+}
+
+.estrelas {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.feedback-card p {
+    color: #d1d5db;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.feedback-card h4 {
+    color: #ffffff;
+    font-size: 1rem;
+}
