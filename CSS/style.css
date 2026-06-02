@@ -251,18 +251,18 @@ body {
 }
 
 .card-geral {
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    padding: 80px 20px;
+    background-color: #05070a;
+    text-align: center;
 }
 
 .card-container {
+    max-width: 1200px;
+    margin: 0 auto;
     display: grid;
-    justify-content: baseline;
-    flex-wrap: wrap;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    padding: 20px;
-    margin: 100px 10%;
 }
 
 .card {
