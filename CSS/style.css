@@ -529,7 +529,7 @@ body {
     border-radius: 50%;
     object-fit: cover;
 
-    border: 2px solid rgba(255,255,255,0.1);
+    border: 2px solid rgba(255, 255, 255, 0.1);
 
     display: block;
 }
@@ -547,6 +547,74 @@ body {
 .autor-card p {
     color: #d1d5db;
     line-height: 1.6;
+}
+
+.faq-garantia {
+    padding: 100px 20px;
+    background-color: #0d1117;
+}
+
+.faq-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.faq-garantia h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.faq-descricao {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+    color: #9ca3af;
+}
+
+.faq-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.faq-item {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.faq-item p {
+    margin-top: 15px;
+    color: #d1d5db;
+}
+
+.garantia {
+    margin-top: 50px;
+    padding: 30px;
+
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+
+    text-align: center;
+}
+
+.garantia h3 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.garantia p {
+    color: #d1d5db;
+    line-height: 1.8;
 }
 
 
@@ -600,42 +668,43 @@ body {
 
 @keyframes pulse {
     0% {
-        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.8);
     }
 
     70% {
-        box-shadow: 0 0 0 20px rgba(37, 211, 102, 0);
+        transform: scale(1.1);
+        box-shadow: 0 0 0 40px rgba(37, 211, 102, 0);
     }
 
     100% {
+        transform: scale(1);
         box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
     }
 }
 
-.shake {
-    animation: shake 0.8s;
+@keyframes shake {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.15);
+    }
+
+    50% {
+        transform: scale(1.25);
+    }
+
+    75% {
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
-@keyframes shake {
-
-    0%,
-    100% {
-        transform: rotate(0deg);
-    }
-
-    20% {
-        transform: rotate(-10deg);
-    }
-
-    40% {
-        transform: rotate(10deg);
-    }
-
-    60% {
-        transform: rotate(-10deg);
-    }
-
-    80% {
-        transform: rotate(10deg);
-    }
+.shake {
+    animation: shake 0.8s ease;
 }
