@@ -105,3 +105,37 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 3000);
   }
 });
+
+function atualizarTimer() {
+
+    const agora = new Date();
+
+    // Próxima 01:00
+    const proximaUma = new Date();
+
+    proximaUma.setHours(1, 0, 0, 0);
+
+    // Se já passou da 1h de hoje,
+    // conta para a 1h de amanhã
+    if (agora >= proximaUma) {
+        proximaUma.setDate(proximaUma.getDate() + 1);
+    }
+
+    const diferenca = proximaUma - agora;
+
+    const horas = Math.floor(diferenca / (1000 * 60 * 60));
+    const minutos = Math.floor(
+        (diferenca % (1000 * 60 * 60)) / (1000 * 60)
+    );
+    const segundos = Math.floor(
+        (diferenca % (1000 * 60)) / 1000
+    );
+
+    document.getElementById("timer").textContent =
+        `${String(horas).padStart(2, '0')}:` +
+        `${String(minutos).padStart(2, '0')}:` +
+        `${String(segundos).padStart(2, '0')}`;
+}
+
+atualizarTimer();
+setInterval(atualizarTimer, 1000);
