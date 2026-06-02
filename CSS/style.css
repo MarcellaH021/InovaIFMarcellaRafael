@@ -79,6 +79,60 @@ body {
     flex: 1;
 }
 
+.certificacoes {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 60px 20px;
+
+    background: linear-gradient(
+        180deg,
+        #05070a 0%,
+        #0d1117 100%
+    );
+}
+
+.certificacoes-conteudo {
+    max-width: 1200px;
+    width: 100%;
+
+    text-align: center;
+}
+
+.certificacoes h2 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    margin-bottom: 20px;
+}
+
+.certificacoes p {
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+
+    font-size: 1.2rem;
+    color: #9ca3af;
+}
+
+.selos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.selo {
+    padding: 40px 20px;
+
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+
+    font-size: 1.1rem;
+    font-weight: 600;
+}
 
 .rodape {
     margin-top: auto;
