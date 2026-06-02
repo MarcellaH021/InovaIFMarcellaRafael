@@ -617,9 +617,92 @@ body {
     line-height: 1.8;
 }
 
+.venda {
+    min-height: 100vh;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    padding: 80px 20px;
 
+    background: linear-gradient(180deg,
+            #05070a 0%,
+            #0d1117 100%);
+}
+
+.venda-container {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+.venda h2 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    margin-bottom: 20px;
+}
+
+.venda-descricao {
+    color: #9ca3af;
+    margin-bottom: 40px;
+}
+
+.oferta {
+    padding: 50px;
+
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+}
+
+.preco-antigo {
+    display: block;
+
+    font-size: 1.2rem;
+    text-decoration: line-through;
+
+    color: #9ca3af;
+}
+
+.preco-atual {
+    font-size: 4rem;
+    font-weight: bold;
+
+    margin: 15px 0;
+}
+
+.parcelamento {
+    color: #d1d5db;
+    margin-bottom: 30px;
+}
+
+.btn-comprar {
+    padding: 16px 40px;
+
+    border: none;
+    border-radius: 12px;
+
+    font-size: 1.1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    background: #22c55e;
+    color: white;
+
+    transition: transform 0.3s ease;
+}
+
+.btn-comprar:hover {
+    transform: scale(1.05);
+}
+
+.cta {
+    margin-top: 25px;
+    color: #9ca3af;
+}
 
 .whatsapp-float {
     position: fixed;
