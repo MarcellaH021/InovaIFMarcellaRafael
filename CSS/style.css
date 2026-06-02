@@ -1,3 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 html {
     height: 100%;
 }
@@ -336,4 +348,54 @@ body {
 .saibaMais.show {
     max-height: 200px;
     opacity: 1;
+}
+
+.utilidade {
+    min-height: 100vh;
+    padding: 80px 20px;
+    background-color: #0d1117;
+}
+
+.utilidade-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.utilidade h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.utilidade-descricao {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 60px;
+    color: #9ca3af;
+}
+
+.utilidade-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.utilidade-card {
+    padding: 30px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.utilidade-card:hover {
+    transform: translateY(-5px);
+}
+
+.utilidade-card h3 {
+    margin-bottom: 15px;
+}
+
+.utilidade-card p {
+    color: #9ca3af;
 }
