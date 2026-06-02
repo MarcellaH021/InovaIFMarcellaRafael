@@ -13,7 +13,7 @@ const buttons = document.querySelectorAll('.btnSM');
 
 buttons.forEach(button => {
   button.addEventListener('click', () => {
-    const text = button.previousElementSibling; 
-    text.style.display = text.style.display === 'block' ? 'none' : 'block';
+    const text = button.previousElementSibling; // pega o <p> antes do botão
+    text.classList.toggle('show'); // ativa/desativa a animação
   });
 });
