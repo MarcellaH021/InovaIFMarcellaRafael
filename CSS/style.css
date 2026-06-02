@@ -146,6 +146,59 @@ body {
     font-weight: 600;
 }
 
+.passos-objetivo {
+    min-height: 100vh;
+    padding: 80px 20px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: #05070a;
+}
+
+.container-passos {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.container-passos h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.descricao-passos {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 60px;
+    color: #9ca3af;
+}
+
+.passos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.passo {
+    padding: 30px;
+
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+}
+
+.passo span {
+    font-size: 2rem;
+    font-weight: bold;
+    opacity: 0.5;
+}
+
+.passo h3 {
+    margin: 15px 0;
+}
+
 .rodape {
     margin-top: auto;
     background-color: #111827;
