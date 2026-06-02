@@ -60,6 +60,24 @@ if (video) {
     }
   });
 
+  // Impede que o usuário tente "pular" partes do vídeo se ele de alguma forma acessar o visor
+  video.addEventListener('seeking', () => {
+    const delta = video.currentTime - lastTime;
+    if (Math.abs(delta) > 1) {
+      video.currentTime = lastTime;
+    }
+  });
+
+  let lastTime = 0;
+  video.addEventListener('timeupdate', () => {
+    if (!video.seeking) {
+      lastTime = video.currentTime;
+    }
+  });
+
+  // Impede o menu de contexto (botão direito) no vídeo para evitar que acessem controles extras
+  video.addEventListener('contextmenu', (e) => e.preventDefault());
+
   // Quando terminar o vídeo
   video.addEventListener('ended', () => {
 
