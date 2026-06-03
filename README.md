@@ -49,8 +49,8 @@ O projeto foi desenvolvido seguindo as melhores práticas de versionamento:
 👥 Autores
 Projeto desenvolvido em dupla para a disciplina de Git e Desenvolvimento Web:
 
-    Integrante 1: [Nome Aqui]
-    Integrante 2: [Nome Aqui]
+    Integrante 1: Marcella Hernandes de Souza
+    Integrante 2: Rafael Cacho de Barros
 
 📄 Licença
 Este projeto foi desenvolvido para fins educacionais no âmbito do IFMS (Instituto Federal de Mato Grosso do Sul).
