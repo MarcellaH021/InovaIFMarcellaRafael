@@ -1,0 +1,19 @@
+{
+  "name": "inovaif",
+  "version": "1.0.0",
+  "description": "InovaIF - Landing Page de Vendas\r Este projeto consiste no desenvolvimento de uma Landing Page profissional para a Feira de Empreendedorismo e Inovação (InovaIF). O objetivo principal é a divulgação e venda de cursos, utilizando uma estrutura moderna, responsiva e otimizada para conversão.\r 🚀 Objetivo do Projeto\r Desenvolver uma estrutura de landing page genérica e robusta, preparada para receber informações de clientes reais no ecossistema de empreendedorismo, focando em:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcellaH021/InovaIFMarcellaRafael.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcellaH021/InovaIFMarcellaRafael/issues"
+  },
+  "homepage": "https://github.com/MarcellaH021/InovaIFMarcellaRafael#readme"
+}
